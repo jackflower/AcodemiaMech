@@ -9,8 +9,9 @@ var velocity = Vector2()
 var direction = Vector2()
 var health = 100
 var shooting = false
-#var bullet_data = preload("res://bullet/Bullet.tscn")
 var bullet_data = preload("bullet/Bullet.tscn")
+var fireball_data = preload("bullet/Fireball.tscn")
+var current_bullet_data = bullet_data
 
 export (float) var created_bullet_scale_factor = 1
 export (float) var created_bullet_speed = 200
@@ -31,6 +32,10 @@ func _input(event):
 	if event.is_action_pressed('Right_click'):
 		if(shooting):
 			Shot()
+	if event.is_action_pressed('Bullet'):
+		current_bullet_data = bullet_data
+	if event.is_action_pressed('Fireball'):
+		current_bullet_data = fireball_data
 	pass
 		
 		
@@ -64,8 +69,8 @@ func _on_TimerShoot_timeout():
 	
 func Shot():
 	
-	var bullet_left = bullet_data.instance()
-	var bullet_right = bullet_data.instance()
+	var bullet_left = current_bullet_data.instance()
+	var bullet_right = current_bullet_data.instance()
 	direction = velocity.normalized()
 	print(direction)
 	
