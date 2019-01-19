@@ -72,7 +72,6 @@ func Shot():
 	var bullet_left = current_bullet_data.instance()
 	var bullet_right = current_bullet_data.instance()
 	direction = velocity.normalized()
-	print(direction)
 	
 	bullet_left.bullet_direction = direction
 	bullet_right.bullet_direction = direction
