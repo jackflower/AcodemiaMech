@@ -9,6 +9,7 @@ script = ExtResource( 1 )
 
 [node name="Mech" parent="." index="0" instance=ExtResource( 2 )]
 
-position = Vector2( 445.604, 146.017 )
+position = Vector2( 481.344, 274.262 )
+scale = Vector2( 3, 3 )
 
 
