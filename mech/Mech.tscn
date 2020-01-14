@@ -123,20 +123,20 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="mech_foot_left" type="Sprite" parent="mech_members" index="0"]
 
-position = Vector2( -20, 1.2 )
+position = Vector2( -20, 0 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="mech_foot_right" type="Sprite" parent="mech_members" index="1"]
 
-position = Vector2( 20, -1.2 )
+position = Vector2( 20, 0 )
 texture = ExtResource( 2 )
 flip_h = true
 _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="mech_arm_left" type="Sprite" parent="mech_members" index="2"]
 
-position = Vector2( -18, -9.24 )
+position = Vector2( -18, -9 )
 texture = ExtResource( 3 )
 _sections_unfolded = [ "Transform" ]
 
@@ -147,7 +147,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="mech_arm_right" type="Sprite" parent="mech_members" index="3"]
 
-position = Vector2( 18, -8.76 )
+position = Vector2( 18, -9 )
 texture = ExtResource( 3 )
 _sections_unfolded = [ "Transform" ]
 
@@ -164,21 +164,19 @@ _sections_unfolded = [ "Transform" ]
 [node name="mech_armlet_left" type="Sprite" parent="mech_members" index="5"]
 
 position = Vector2( -13, 9 )
-rotation = -0.393746
 texture = ExtResource( 5 )
 _sections_unfolded = [ "Animation", "Offset", "Transform" ]
 
 [node name="mech_armlet_right" type="Sprite" parent="mech_members" index="6"]
 
 position = Vector2( 13, 9 )
-rotation = 0.393746
 texture = ExtResource( 5 )
 flip_h = true
 _sections_unfolded = [ "Offset", "Transform" ]
 
 [node name="mech_head" type="Sprite" parent="mech_members" index="7"]
 
-position = Vector2( 0, 9.94 )
+position = Vector2( 0, 9 )
 texture = ExtResource( 6 )
 _sections_unfolded = [ "Transform" ]
 
