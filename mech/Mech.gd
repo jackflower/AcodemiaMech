@@ -41,11 +41,14 @@ func _input(event):
 		
 func _physics_process(delta):
 	
-	velocity = (target - position).normalized() * mech_speed
+	velocity = (target - position).normalized() * mech_speed * delta
 	rotation = velocity.angle()
-
+	
 	if (target - position).length() > 5:
-		move_and_slide(velocity)
+		# August 14, 2020
+		# move_and_slide(velocity)
+		# velocity = move_and_collide(velocity)
+		move_and_collide(velocity)
 	else:
 		$mech_members/AnimationPlayer.play("animation_mech_walk")
 	pass
